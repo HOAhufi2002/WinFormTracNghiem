@@ -49,27 +49,42 @@ namespace AppTracNghiem
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
+            if (e.RowIndex < 0) // Kiểm tra nếu không có hàng nào được chọn
             {
-                int maCaThi = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value);
-                DateTime thoiGianBatDau = Convert.ToDateTime(dataGridView1.Rows[e.RowIndex].Cells[2].Value);
-                DateTime thoiGianKetThuc = Convert.ToDateTime(dataGridView1.Rows[e.RowIndex].Cells[3].Value);
-
-                if (DateTime.Now < thoiGianBatDau)
-                {
-                    MessageBox.Show("Ca thi chưa bắt đầu.");
-                    return;
-                }
-                if (DateTime.Now > thoiGianKetThuc)
-                {
-                    MessageBox.Show("Ca thi đã kết thúc.");
-                    return;
-                }
-
-                this.Hide();
-                var formBaiThi = new BaiThi(userEmail, maNguoiDung, maCaThi);
-                formBaiThi.Show();
+                MessageBox.Show("Vui lòng chọn một ca thi.");
+                return;
             }
+
+            // Kiểm tra nếu ô giá trị là DBNull trước khi chuyển đổi
+            if (dataGridView1.Rows[e.RowIndex].Cells[0].Value == DBNull.Value ||
+                dataGridView1.Rows[e.RowIndex].Cells[2].Value == DBNull.Value ||
+                dataGridView1.Rows[e.RowIndex].Cells[3].Value == DBNull.Value)
+            {
+                MessageBox.Show("Vui lòng chọn ca thi.");
+                return;
+            }
+
+            // Lấy thông tin từ DataGridView khi có hàng được chọn
+            int maCaThi = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value);
+            DateTime thoiGianBatDau = Convert.ToDateTime(dataGridView1.Rows[e.RowIndex].Cells[2].Value);
+            DateTime thoiGianKetThuc = Convert.ToDateTime(dataGridView1.Rows[e.RowIndex].Cells[3].Value);
+
+            // Kiểm tra thời gian bắt đầu và kết thúc của ca thi
+            if (DateTime.Now < thoiGianBatDau)
+            {
+                MessageBox.Show("Ca thi chưa bắt đầu.");
+                return;
+            }
+            if (DateTime.Now > thoiGianKetThuc)
+            {
+                MessageBox.Show("Ca thi đã kết thúc.");
+                return;
+            }
+
+            // Ẩn form hiện tại và mở form bài thi
+            this.Hide();
+            var formBaiThi = new BaiThi(userEmail, maNguoiDung, maCaThi);
+            formBaiThi.Show();
         }
         private void FormChonCaThi_Load(object sender, EventArgs e)
         {

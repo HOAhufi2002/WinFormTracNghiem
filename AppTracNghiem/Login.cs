@@ -68,5 +68,15 @@ namespace AppTracNghiem
                 MessageBox.Show("Không thể kết nối đến cơ sở dữ liệu.");
             }
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            textBox2.PasswordChar = '*';  // Hiển thị dấu * khi nhập mật khẩu
+        }
     }
 }
