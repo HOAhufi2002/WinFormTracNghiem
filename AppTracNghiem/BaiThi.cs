@@ -229,7 +229,7 @@ namespace AppTracNghiem
                 }
             }
 
-            decimal diem = (decimal)soCauDung / dsQuestion.Count * 10;
+            decimal diem = Math.Round((decimal)soCauDung / dsQuestion.Count * 10, 2);
 
             int maBaiThi = LuuKetQuaVaoCoSoDuLieu(soCauDung, diem);
 
@@ -283,6 +283,19 @@ namespace AppTracNghiem
             {
                 timer1.Stop();
                 NopBai();  
+            }
+        }
+
+        private void CauTruocDo_Click(object sender, EventArgs e)
+        {
+            if (cauHoiHienTai > 0)  // Kiểm tra nếu không phải là câu hỏi đầu tiên
+            {
+                cauHoiHienTai--;  // Giảm số thứ tự câu hỏi hiện tại
+                HienThiCauHoi(cauHoiHienTai);  // Hiển thị câu hỏi trước đó
+            }
+            else
+            {
+                MessageBox.Show("Bạn đang ở câu hỏi đầu tiên.");
             }
         }
     }

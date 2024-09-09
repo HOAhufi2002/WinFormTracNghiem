@@ -46,6 +46,7 @@ namespace AppTracNghiem
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.CauTruocDo = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -214,11 +215,23 @@ namespace AppTracNghiem
             this.label2.TabIndex = 0;
             this.label2.Text = "BÀI THI";
             // 
+            // CauTruocDo
+            // 
+            this.CauTruocDo.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.CauTruocDo.Location = new System.Drawing.Point(307, 360);
+            this.CauTruocDo.Name = "CauTruocDo";
+            this.CauTruocDo.Size = new System.Drawing.Size(89, 31);
+            this.CauTruocDo.TabIndex = 11;
+            this.CauTruocDo.Text = "Cấu trước";
+            this.CauTruocDo.UseVisualStyleBackColor = true;
+            this.CauTruocDo.Click += new System.EventHandler(this.CauTruocDo_Click);
+            // 
             // BaiThi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 403);
+            this.Controls.Add(this.CauTruocDo);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -254,5 +267,6 @@ namespace AppTracNghiem
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbltentaikhoan;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button CauTruocDo;
     }
 }
