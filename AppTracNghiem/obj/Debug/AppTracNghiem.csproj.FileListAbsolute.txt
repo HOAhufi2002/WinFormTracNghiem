@@ -21,4 +21,4 @@ C:\Users\kingg\source\repos\AppTracNghiem\AppTracNghiem\obj\Debug\AppTracNghiem.
 C:\Users\kingg\source\repos\AppTracNghiem\AppTracNghiem\obj\Debug\AppTracNghiem.FormChonCaThi.resources
 C:\Users\kingg\source\repos\AppTracNghiem\AppTracNghiem\bin\Debug\System.Data.SqlClient.dll
 C:\Users\kingg\source\repos\AppTracNghiem\AppTracNghiem\bin\Debug\System.Data.SqlClient.xml
-C:\Users\kingg\source\repos\AppTracNghiem\AppTracNghiem\obj\Debug\AppTracN.51475730.Up2Date
+C:\Users\kingg\source\repos\AppTracNghiem\AppTracNghiem\obj\Debug\AppTracNghiem.csproj.CopyComplete

@@ -57,7 +57,8 @@ namespace AppTracNghiem
             // 
             this.rbOptionA.AutoSize = true;
             this.rbOptionA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbOptionA.Location = new System.Drawing.Point(3, 78);
+            this.rbOptionA.Location = new System.Drawing.Point(4, 96);
+            this.rbOptionA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbOptionA.Name = "rbOptionA";
             this.rbOptionA.Size = new System.Drawing.Size(38, 24);
             this.rbOptionA.TabIndex = 0;
@@ -70,7 +71,8 @@ namespace AppTracNghiem
             // 
             this.rbOptionB.AutoSize = true;
             this.rbOptionB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbOptionB.Location = new System.Drawing.Point(3, 127);
+            this.rbOptionB.Location = new System.Drawing.Point(4, 156);
+            this.rbOptionB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbOptionB.Name = "rbOptionB";
             this.rbOptionB.Size = new System.Drawing.Size(38, 24);
             this.rbOptionB.TabIndex = 1;
@@ -83,7 +85,8 @@ namespace AppTracNghiem
             // 
             this.rbOptionC.AutoSize = true;
             this.rbOptionC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbOptionC.Location = new System.Drawing.Point(3, 173);
+            this.rbOptionC.Location = new System.Drawing.Point(4, 213);
+            this.rbOptionC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbOptionC.Name = "rbOptionC";
             this.rbOptionC.Size = new System.Drawing.Size(38, 24);
             this.rbOptionC.TabIndex = 2;
@@ -96,7 +99,8 @@ namespace AppTracNghiem
             // 
             this.rbOptionD.AutoSize = true;
             this.rbOptionD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbOptionD.Location = new System.Drawing.Point(3, 217);
+            this.rbOptionD.Location = new System.Drawing.Point(4, 267);
+            this.rbOptionD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbOptionD.Name = "rbOptionD";
             this.rbOptionD.Size = new System.Drawing.Size(39, 24);
             this.rbOptionD.TabIndex = 3;
@@ -109,7 +113,8 @@ namespace AppTracNghiem
             // 
             this.lblThoiGianConLai.AutoSize = true;
             this.lblThoiGianConLai.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThoiGianConLai.Location = new System.Drawing.Point(3, 7);
+            this.lblThoiGianConLai.Location = new System.Drawing.Point(4, 9);
+            this.lblThoiGianConLai.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblThoiGianConLai.Name = "lblThoiGianConLai";
             this.lblThoiGianConLai.Size = new System.Drawing.Size(166, 24);
             this.lblThoiGianConLai.TabIndex = 4;
@@ -119,7 +124,8 @@ namespace AppTracNghiem
             // 
             this.lblCauHoi.AutoSize = true;
             this.lblCauHoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCauHoi.Location = new System.Drawing.Point(3, 11);
+            this.lblCauHoi.Location = new System.Drawing.Point(4, 14);
+            this.lblCauHoi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCauHoi.Name = "lblCauHoi";
             this.lblCauHoi.Size = new System.Drawing.Size(63, 20);
             this.lblCauHoi.TabIndex = 5;
@@ -128,9 +134,10 @@ namespace AppTracNghiem
             // btnNext
             // 
             this.btnNext.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.btnNext.Location = new System.Drawing.Point(697, 365);
+            this.btnNext.Location = new System.Drawing.Point(929, 449);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(89, 31);
+            this.btnNext.Size = new System.Drawing.Size(119, 38);
             this.btnNext.TabIndex = 6;
             this.btnNext.Text = "Câu tiếp theo";
             this.btnNext.UseVisualStyleBackColor = true;
@@ -139,9 +146,10 @@ namespace AppTracNghiem
             // btnSubmit
             // 
             this.btnSubmit.ForeColor = System.Drawing.Color.YellowGreen;
-            this.btnSubmit.Location = new System.Drawing.Point(97, 257);
+            this.btnSubmit.Location = new System.Drawing.Point(129, 316);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(90, 30);
+            this.btnSubmit.Size = new System.Drawing.Size(120, 37);
             this.btnSubmit.TabIndex = 7;
             this.btnSubmit.Text = "Nộp bài";
             this.btnSubmit.UseVisualStyleBackColor = true;
@@ -157,17 +165,19 @@ namespace AppTracNghiem
             this.panel1.Controls.Add(this.lbltentaikhoan);
             this.panel1.Controls.Add(this.lblThoiGianConLai);
             this.panel1.Controls.Add(this.btnSubmit);
-            this.panel1.Location = new System.Drawing.Point(9, 50);
+            this.panel1.Location = new System.Drawing.Point(12, 62);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(292, 302);
+            this.panel1.Size = new System.Drawing.Size(389, 372);
             this.panel1.TabIndex = 8;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(39, 78);
+            this.pictureBox1.Location = new System.Drawing.Point(52, 96);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(218, 162);
+            this.pictureBox1.Size = new System.Drawing.Size(291, 199);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -176,7 +186,8 @@ namespace AppTracNghiem
             // 
             this.lbltentaikhoan.AutoSize = true;
             this.lbltentaikhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltentaikhoan.Location = new System.Drawing.Point(13, 43);
+            this.lbltentaikhoan.Location = new System.Drawing.Point(17, 53);
+            this.lbltentaikhoan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltentaikhoan.Name = "lbltentaikhoan";
             this.lbltentaikhoan.Size = new System.Drawing.Size(19, 20);
             this.lbltentaikhoan.TabIndex = 9;
@@ -189,9 +200,10 @@ namespace AppTracNghiem
             this.panel2.Controls.Add(this.rbOptionC);
             this.panel2.Controls.Add(this.rbOptionB);
             this.panel2.Controls.Add(this.rbOptionA);
-            this.panel2.Location = new System.Drawing.Point(307, 50);
+            this.panel2.Location = new System.Drawing.Point(409, 62);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(492, 304);
+            this.panel2.Size = new System.Drawing.Size(962, 374);
             this.panel2.TabIndex = 9;
             // 
             // panel3
@@ -200,8 +212,9 @@ namespace AppTracNghiem
             this.panel3.Controls.Add(this.label2);
             this.panel3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel3.Location = new System.Drawing.Point(1, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(798, 48);
+            this.panel3.Size = new System.Drawing.Size(1370, 59);
             this.panel3.TabIndex = 10;
             // 
             // label2
@@ -209,7 +222,8 @@ namespace AppTracNghiem
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(339, 6);
+            this.label2.Location = new System.Drawing.Point(540, 7);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(143, 39);
             this.label2.TabIndex = 0;
@@ -218,9 +232,10 @@ namespace AppTracNghiem
             // CauTruocDo
             // 
             this.CauTruocDo.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.CauTruocDo.Location = new System.Drawing.Point(307, 360);
+            this.CauTruocDo.Location = new System.Drawing.Point(409, 443);
+            this.CauTruocDo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CauTruocDo.Name = "CauTruocDo";
-            this.CauTruocDo.Size = new System.Drawing.Size(89, 31);
+            this.CauTruocDo.Size = new System.Drawing.Size(119, 38);
             this.CauTruocDo.TabIndex = 11;
             this.CauTruocDo.Text = "Cấu trước";
             this.CauTruocDo.UseVisualStyleBackColor = true;
@@ -228,14 +243,15 @@ namespace AppTracNghiem
             // 
             // BaiThi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 403);
+            this.ClientSize = new System.Drawing.Size(1371, 496);
             this.Controls.Add(this.CauTruocDo);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnNext);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "BaiThi";
             this.Text = "BaiThi";
             this.Load += new System.EventHandler(this.BaiThi_Load);
